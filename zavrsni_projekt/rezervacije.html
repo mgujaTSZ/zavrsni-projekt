@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vila Sučić</title>
+  <link rel="stylesheet" href="obrovac.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <p class="sacramento-regular">Vila Sučić</p>
+
+  <a href="index.html">Početna</a>
+  <a href="o_nama.html">O Nama</a>
+  <a href="galerija.html">Galerija</a>
+  <a href="recenzije.html">Recenzije</a>
+  <a href="rezervacije.html">Rezervacije</a>
+</header>
+
+
+
+<main class="ancizar-serif">
+  <h1>Odlučili ste?</h1>
+  <br>
+  <p>Sjajno, odmah rezervirajte vaše mjesto za mir</p>
+  <br>
+
+  <form action="/rezervacija" method="post" style="width: 100%; max-width: 500px;">
+    <label for="ime">Vaše ime:</label>
+    <input type="text" id="ime" name="ime" required>
+    <br>
+    <label for="prezime">Vaše prezime:</label>
+    <input type="text" id="prezime" name="prezime" required>
+    <br>
+    <label for="email">Email adresa:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="telefon">Broj telefona:</label>
+    <input type="tel" id="telefon" name="telefon" required placeholder="00-0000-0000">
+    <br>
+    <label for="dolazak">Datum dolaska:</label>
+    <input type="date" id="dolazak" name="dolazak" required>
+    <br>
+    <label for="odlazak">Datum odlaska:</label>
+    <input type="date" id="odlazak" name="odlazak" required>
+    <br>
+    <label for="poruka">Dodatne napomene: (npr. "Dolazimo sa dvoje kućnih ljubimaca.")</label>
+    <textarea id="poruka" name="poruka" rows="4"></textarea>
+    <br>
+    <button type="submit" formaction="rezervacije.html">Pošalji rezervaciju</button>
+  </form>
+
+</main>
+
+
+
+<footer>
+  <p>Copyright &copy; Obitelj Sučić</p>
+</footer>
+</body>
+</html>

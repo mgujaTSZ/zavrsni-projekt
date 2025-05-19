@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vila Sučić</title>
+    <link rel="stylesheet" href="obrovac.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <p class="sacramento-regular">Vila Sučić</p>
+    <a href="index.html">Početna</a>
+    <a href="o_nama.html">O Nama</a>
+    <a href="galerija.html">Galerija</a>
+    <a href="recenzije.html">Recenzije</a>
+    <a href="rezervacije.html">Rezervacije</a>
+</header>
+
+
+
+
+<main class="ancizar-serif">
+    <h1>Recenzije gostiju</h1>
+
+    <!-- Prikaz postojećih recenzija -->
+    <section>
+        <article>
+            <p><strong>Bruno</strong> ⭐⭐⭐⭐⭐</p>
+            <p>
+                Izvrstan smještaj, prostran, miran, s vrlo lijepim pogledom. Iznimno dobro opremljeni, možete kuhati, pa čak i primati (široke terase. Dovoljno mjesta za parkiranje). Veliki bazen.
+            </p>
+            <h4><a href="https://hr.airbnb.com/rooms/794781040510750980/reviews?source_impression_id=p3_1747672613_P3HfoUxNLpQBdQt2&scroll_to_review=1245595649344717477">Izvor recenzije preko Airbnb</a></h4>
+            <br>
+        </article>
+        <article>
+            <p><strong>Marius</strong> ⭐⭐⭐⭐⭐</p>
+            <p>
+                Moji prijatelji i ja voljeli smo naš dvotjedni odmor u tom smještaju. Imali smo miran i lijep smještaj u odličnom okruženju koji vas poziva da se opustite i istražujete. Naši su domaćini vile bili susretljivi, vrlo gostoljubivi i dostupni u svakom trenutku. Veliki je naglasak stavljen na čistoću cijelog objekta i u skladu s tim se održava. U svakom bismo trenutku ponovno proveli odmor u ovom smještaju i toplo bismo ga preporučili svima!
+            </p>
+            <h4><a href="https://hr.airbnb.com/rooms/794781040510750980/reviews?source_impression_id=p3_1747672613_P3HfoUxNLpQBdQt2&scroll_to_review=1245595649344717477">Izvor recenzije preko Airbnb</a></h4>
+            <br>
+        </article>
+        <article>
+            <p><strong>Eric</strong> ⭐⭐⭐⭐⭐</p>
+            <p>
+                Vrlo potpuno opremljena kuća. U kuhinji je gotovo sve već osigurano (od kave do tableta za pranje posuđa...). Mnogi ručnici na zalihama, pa čak i gel za tuširanje unutar i na vanjskom tušu pored bazena, što je, usput rečeno, bilo divno toplo na temperaturi.
+                Mirna lokacija, a ipak na dohvat ruke od većine nacionalnih parkova automobilom u blizini, kao i u raznim uvalama i prekrasnim mjestima na obali mora.
+                Vrlo ljubazni vlasnici koji su nas dočekali s lijepim obrokom i koji su održavali svoj smještaj s velikom pažnjom.
+                Toplo preporučujemo!
+            </p>
+            <h4><a href="https://hr.airbnb.com/rooms/794781040510750980/reviews?source_impression_id=p3_1747672613_P3HfoUxNLpQBdQt2&scroll_to_review=1245595649344717477">Izvor recenzije preko Airbnb</a></h4>
+            <br>
+        </article>
+        <article>
+            <p><strong>Andrea</strong> ⭐⭐⭐⭐⭐</p>
+            <p>
+                10 dana sam bio u vili Sucic s 5 prijatelja. Vila je san. Sve što trebaš je tu. Kuća ima klima-uređaj i spavaće sobe. Tri vrlo čiste kupaonice, svaka s tušem. Tereni su prekrasni i čisti. Blagovaonica na vrhu terase s pogledom na bazen idealna je. Ispod se nalazi natkriveni prostor za sjedenje s velikom zidnom pećnicom/roštiljem. Vani je kupaonica s tušem, a između nje ne morate hodati mokri kroz kuću.Veliki bazen je bio naš vrhunac. Velika preporuka s moje strane. Vraćamo se.🌴
+                Vlasnici su uvijek dostupni i vrlo ljubazni i puni ljubavi.💕 Bili smo jako sretni. 😊
+            </p>
+            <h4><a href="https://www.booking.com/hotel/hr/villa-sucic-with-private-pool-and-mountain-view.hr.html#tab-reviews">Izvor recenzije preko Booking</a></h4>
+            <br>
+        </article>
+
+    </section>
+
+    <!-- Forma za dodavanje nove recenzije -->
+    <form action="/recenzija" method="post" style="width: 100%; max-width: 500px;">
+        <label for="ime">Vaše ime:</label>
+        <input type="text" id="ime" name="ime" required>
+
+        <br>
+
+        <label for="ocjena">Ocjena:</label>
+        <select id="ocjena" name="ocjena" required>
+            <option value="5">5 - Odlično</option>
+            <option value="4">4 - Vrlo dobro</option>
+            <option value="3">3 - Dobro</option>
+            <option value="2">2 - Osrednje</option>
+            <option value="1">1 - Loše</option>
+        </select>
+
+        <br>
+
+        <label for="komentar">Komentar:</label>
+        <textarea id="komentar" name="komentar" rows="4" required></textarea>
+
+        <br>
+
+        <button type="submit" formaction="recenzije.html">Pošalji recenziju</button>
+    </form>
+</main>
+
+
+
+
+<footer>
+    <p>Copyright &copy; Obitelj Sučić</p>
+</footer>
+</body>
+</html>
